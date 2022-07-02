@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const appApi = createApi({
     reducerPath: "appApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: process.env.BACKEND_URL,
+        baseUrl: process.env.REACT_APP_BACKEND_URL,
     }),
 
     endpoints: (builder) => ({
